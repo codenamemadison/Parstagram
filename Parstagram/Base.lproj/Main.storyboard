@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,13 +105,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDH-Vw-wxV">
-                                                    <rect key="frame" x="8" y="440" width="46" height="25.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <rect key="frame" x="8" y="440" width="49" height="25.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="photos from my summer trip!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-B3-7T3">
-                                                    <rect key="frame" x="62" y="440" width="344" height="25.5"/>
+                                                    <rect key="frame" x="65" y="440" width="341" height="25.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -142,6 +142,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ptz-Da-WAr">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="0uY-gW-7zA" userLabel="Logout">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="EXs-5k-XBa" id="kj9-U0-aKj"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="eMR-cg-zwA">
                             <connections>
                                 <segue destination="O0B-Vn-WqV" kind="presentation" id="Rdh-rR-8Lc"/>
@@ -208,7 +213,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0zY-yH-Hw9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EHB-25-dJ8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="EHB-25-dJ8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8qm-0b-by0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
